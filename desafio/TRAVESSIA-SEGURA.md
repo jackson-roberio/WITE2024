@@ -16,55 +16,55 @@ As instruções informadas aqui são os passos iniciais para resolução do prob
 
 - 1 Protoboard (Conheça mais da protoboard aqui) 
 
-<img src="midia/iot/protoboard/media.png" alt="Protoboard" height="250">
+<img src="../midia/iot/protoboard/media.png" alt="Protoboard" height="250">
 
 - 3 Led's de cores Verde, Amarelo e Vermelho (Conheça mais sobre Led aqui)
 
-<img src="midia/iot/diversos/led-vermelho.png" alt="Led de cor vermelha" height="250">
+<img src="../midia/iot/diversos/led-vermelho.png" alt="Led de cor vermelha" height="125">
 
 - 3 Resistores
 
-<img src="midia/iot/diversos/resistor.png" alt="Descrição da imagem" height="250">  
+<img src="../midia/iot/diversos/resistor.png" alt="Descrição da imagem" height="200">  
 
 - 1 Microcontrolador ESP32 (Conheça mais sobre ESP32 aqui)
 
-<img src="midia/iot/microcontrolador/esp32.png" alt="ESP32" height="250">
+<img src="../midia/iot/microcontrolador/esp32.png" alt="ESP32" height="250">
 
 - Jumper
 
-<img src="midia/iot/diversos/jumper-machoxmacho.png" alt="Descrição da imagem" height="250"> 
+<img src="../midia/iot/diversos/jumper-machoxmacho.png" alt="Descrição da imagem" height="200"> 
 
 
 ### Mãos na obra :hammer:
 
 As instruções repassadas nesse manual terão uma pespectiva final semelhante a animação abaixo:
 
-<img src="midia/desafio/01/animacao.gif" alt="Projeto final" height="250">
+<img src="../midia/desafio/01/animacao.gif" alt="Projeto final" height="250">
 
 Para isso vamos montar peça por peça.
 
 **Passo 01** : Conecte os leds na protoboard a ponto de deixar espaço suficiente para o jumpers que entraram pelo lado do ESP32 e dos resistores.
 
-<img src="midia/desafio/01/passo1.jpg" alt="Projeto final" height="250"> 
+<img src="../midia/desafio/01/passo1.jpg" alt="Projeto final" height="250"> 
 
 **Passo 02** : Encaixe os resistores no perna mais curta de cada led e encaixe cada um dos resistores na linha neutro (GND) da protoboard (-).
 
-<img src="midia/desafio/01/passo2.jpg" alt="Projeto final" height="250"> 
+<img src="../midia/desafio/01/passo2.jpg" alt="Projeto final" height="250"> 
 
 **Passo 03** : Encaixe o ESP32 (busque o ESP32 que tenha escrito em papel 01 em sua face traseira, pois ele esta pré-programado) em uma posição que não atrapalhe o led, recomendamos na outra fileira dos leds, neste momento só é necessário encaixar uma parte do ESP32, a outra parte pode ficar exposta para fora, evite encaixar o ESP32 na fileira reserva para o fase e neutro (GND) da protoboard.
 
-<img src="midia/desafio/01/passo3.jpg" alt="Projeto final" height="250"> 
+<img src="../midia/desafio/01/passo3.jpg" alt="Projeto final" height="250"> 
 
 **Passo 04** : Na placa ESP32 busque a fileira referente ao GND (neutro) e faça a ligação dele para a fileira reserva para o linha neuto (-).
 
-<img src="midia/desafio/01/passo4.jpg" alt="Projeto final" height="250"> 
+<img src="../midia/desafio/01/passo4.jpg" alt="Projeto final" height="250"> 
 
 **Passo 05** : Conecte os fios na entrada de acordo com as instruções
   - Saída D21 ligando o positivo (perna maior) do Led vermelho
   - Saída D19 ligando o positivo (perna maior) do Led amarelo
   - Saída D5 ligando o positivo (perna maior) do Led verde
 
-<img src="midia/desafio/01/passo5.jpg" alt="Projeto final" height="250"> 
+<img src="../midia/desafio/01/passo5.jpg" alt="Projeto final" height="250"> 
 
 **Passo 06** : Realizado todos os passos corretamente, solicite a avaliação de um dos monitores da oficina para rever se a solução foi aplicada corretamente e testar em uma fonte de energia.
 
@@ -74,6 +74,6 @@ Para isso vamos montar peça por peça.
 
 _Imagens ilustrativa par aguçar sua criatividade_
 
-[Clique aqui caso deseje conferir o código fonte pré-programado dessa solução.](midia/desafio/01/codigo_fonte.ino)
+[Clique aqui caso deseje conferir o código fonte pré-programado dessa solução.](../midia/desafio/01/codigo_fonte.ino)
 
   
