@@ -48,31 +48,31 @@ As instruções repassadas nesse manual terão uma pespectiva final semelhante a
 
 Para chegar nesse estado, vamos montar peça por peça através dos passos abaixo.
 
-**Passo 01** : 
+**Passo 01** : Com a protoboard em mãos, encaixer o ESP32 na terceira fileira de um das extremidades, observe que as duas primeiras fileiras são reservadas para fase (+) e neutro/GND (-), se tiver dúvidas sobre a protoboard veja nosso manual sobre essa placa.
 
 <img src="../midia/desafio/04/01.jpg" alt="..." height="250">
 
-**Passo 02** : 
+**Passo 02** : Pegue a Speaker (mini alto-falante) e conecter em suas extremidades os polos negativos/GND (-) e positivo (+), vale salientar que o polo negativo/GND é o de fio escuro e o de cor vermelha é o de polo positivo (+), neste momento não encaixaremos o Speaker na protoboard, somente encaixaremos os jumper's _macho x macho_ nas extremidades do Speaker. 
 
 <img src="../midia/desafio/04/02.jpg" alt="..." height="250">
 
-**Passo 03** : 
+**Passo 03** : Em um processo semelhante ao do passo 02, agora faremos no sensor de presença, separe três jumper's _macho x fêmea_ e encaixe nas posições relativas a polaridade, recomenda-se usar jumper's de cores diferentes para facilitar a identificação. Caso não saiba onde encaixar os cabos, recomendamos a leitura das instruções do Sensor de presença.  
 
 <img src="../midia/desafio/04/03.jpg" alt="..." height="250">
 
-**Passo 04** : 
+**Passo 04** : Agora famos encaixar os jumper's na protoboard, vamos começar pelo trilhar negativa/GND (-) da protoboard, separe um jumper _macho x macho_, para isso conecte em qualquer posição do negativo (-) da proboard e na outra extremidade do cabo na trilha que estiver encaixado o GND do ESP32.
 
 <img src="../midia/desafio/04/04.jpg" alt="..." height="250">
 
-**Passo 05** : 
+**Passo 05** : Com o Speaker em mão, conecte o cabo negativo do spekear na trilha neutro (-) da protoboard, vale salientar que a perta de cor preta do speaker é a perna onde a polaridade deve esta conectado na negativa. O outro cabo da Speaker encaixe na trilha do protoboard que estiver conectado a porta G13 do ESP32. 
 
 <img src="../midia/desafio/04/05.jpg" alt="..." height="250">
 
-**Passo 06** : 
+**Passo 06** : Agora vamos conectar os cabos do sensor de presença, o cabo do meio é relativo ao cabo de dados, onde transmitirá o valor se há presença ou não para o nosso microcontrolador (no nosso caso o ESP32), coloque o cabo do meio na trilhar da protoboard conectada na porta G27 do ESP32. Os outros dois cabos coloque na porta 5V e na trilha neutro (-) da protoboard, observe que há uma polarização exata de conexão e é recomendado verificar a página de instrução do sensor de presença para realizar a conexão correta.
 
 <img src="../midia/desafio/04/06.jpg" alt="..." height="250">
 
-**Passo 07** : 
+**Passo 07** : Com todos sensores conectados podemos realizar a configuração de aproximação e tempo de captação de permanência de presença, para isso, e se necessário, com uma chave de fenda posicione um dos encaixes amarelos do sensor de presença (há dois), eles realizarão essa configuração, vale salientar que ao ligar o sensor em uma fonte de energia não será possível alterar essas sensibilidades, então caso não esteja do seu interesse, desconecte da energia e reconfigure a sensibilidade do sensor de presença e reconecte na energia para avaliação.  
 
 <img src="../midia/desafio/04/07.jpg" alt="..." height="250">
 
