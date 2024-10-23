@@ -1,3 +1,9 @@
+/**
+* WITE 2024
+* Robótica Educacional
+* Desafio : Acessibilidade na Escola
+*/ 
+
 // Definição de pinos
 const int botaoPin = 21;     // Pino onde o botão está conectado
 const int ledPin = 17;       // Pino onde o LED está conectado

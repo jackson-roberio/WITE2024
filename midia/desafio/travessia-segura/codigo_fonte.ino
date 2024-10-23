@@ -1,6 +1,11 @@
- #define LedVermelho 21
- #define LedAmarelo 19
- #define LedVerde 5
+/**
+* WITE 2024
+* Robótica Educacional
+* Desafio : Travessia Segura
+*/ 
+#define LedVermelho 21
+#define LedAmarelo 19
+#define LedVerde 5
 
 void setup() {
   pinMode(LedVermelho, OUTPUT);
