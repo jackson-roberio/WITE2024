@@ -72,4 +72,4 @@ As instruções informadas aqui são os passos iniciais para resolução do prob
 
 **Passo 08** : Confirmado que a solução esta funcionando, agora realize, com o material de apoio e descartáveis, uma solução estética mais agradável para o seu desafio. O grupo que entreguar o melhor projeto ganhará um brinde :gift:.
 
-[Clique aqui caso deseje conferir o código fonte pré-programado dessa solução.](../midia/desafio/06/codigo_fonte.ino)
+[Clique aqui caso deseje conferir o código fonte pré-programado dessa solução.](../midia/desafio/acessibilidade-na-escola/codigo_fonte.ino)
