@@ -44,36 +44,29 @@ As instruções informadas aqui são os passos iniciais para resolução do prob
 
 ### Mãos a massa :hammer:
 
-As instruções repassadas nesse manual terão uma pespectiva final semelhante a imagem abaixo:
-
-~~COLOCAR VÍDEO AQUI!!!~~
-
-
-Para chegar nesse estado, vamos montar peça por peça através dos passos abaixo.
-
 **Passo 01** : Com a protoboard em mãos, encaixer o ESP32 na terceira fileira de um das extremidades, observe que as duas primeiras fileiras são reservadas para fase (+) e neutro/GND (-), se tiver dúvidas sobre a protoboard veja nosso manual sobre essa placa. Obs. busque o ESP32 que estiver um papel com o número 03 na parte inferior dele, pois esta placa já esta pre-configurada com a programação necessáwria desse desafio.
 
-<img src="../midia/desafio/06/01.jpg" alt="..." height="250">
+<img src="../midia/desafio/acessibilidade-na-escola/01.jpg" alt="Encaixe da ESP32 na Protoboard" height="250">
 
 **Passo 02** : Conecte um cabo da fileira GND (neuto) do ESP32 do protoboard na coluna relativa ao neutro (-) da mesma protoboard.
 
-<img src="../midia/desafio/06/02.jpg" alt="..." height="250">
+<img src="../midia/desafio/acessibilidade-na-escola/02.jpg" alt="Jumpeado GND na coluna neutro" height="250">
 
 **Passo 03** : Vamos montar o botão acionado junto a protoboard, para isso será necessário encaixar as duas polaridades (extremidades do botão acionador) em linhas diferentes, encaixe o botão em uma posição que ele fique levemente centralizado, para facilitar os encaixes do fase e do neutro. Em uma das polaridade (são de linhas diferentes) conecte jumpeando junto a coluna de neutro (-) da protoboard, na outra polaridade jampeie junto a linha G21 da protoboard. 
 
-<img src="../midia/desafio/06/03.jpg" alt="..." height="250">
+<img src="../midia/desafio/acessibilidade-na-escola/03.jpg" alt="conectando botão acionado junto a protoboard e jumpeado com ESP32" height="250">
 
 **Passo 04** : O próximo passo pode ser a organização do led, para isso encaixe as duas perninhas do led ao ponto de não ficarem na mesma linha, a linha mais longa do led é responsável pela corrente positiva (+) que será ligada jumpeando junto a entrada G17 da nossa ESP32, a outra perninha do led é o neutro (-), com um resistor de auxílio use-o para fazer a conexão junto a linha neutro (-) do protoboard.
 
-<img src="../midia/desafio/06/04.jpg" alt="..." height="250">
+<img src="../midia/desafio/acessibilidade-na-escola/04.jpg" alt="Protoboard, ESP32, botão acionador e Led com resistor, isso tudo interligado." height="250">
 
 **Passo 05** : Organizaremos o Speaker (mini alto-falante) para facilitar a conexão na protoboard, para isso com o uso de dois jumpers diferentes conecter em cada uma de suas extermidades, leve em consideração que o fio vermelho do Speaker é relativo a fase (+) e o outro fio ao neutro (-). 
 
-<img src="../midia/desafio/06/05.jpg" alt="..." height="250">
+<img src="../midia/desafio/acessibilidade-na-escola/05.jpg" alt="Speaker com conexão jumper em seus terminais com imagem de fundo do protoboard, botão acionador, led e conexões." height="250">
 
 **Passo 06** : Com as extensões do Speaker pronta para encaixar na protoboard, coloque-as na linha do protoboard referente a entrada G15 da nossa placa ESP32 o cabo de polaridade fase (+) e o cabo de polaridade neutro encaixe na coluna de neutro (-) da nossa protoboard.
 
-<img src="../midia/desafio/06/06.jpg" alt="..." height="250">
+<img src="../midia/desafio/acessibilidade-na-escola/06.jpg" alt="Projeto montado com Protoboard, ESP32, Speaker, botão acionador e Led de cor vermelha." height="250">
 
 **Passo 07** : Pronto, o dispositivo foi montado, após realizar todos os passos corretamente solicite a avaliação de um dos monitores da oficina para rever se a solução foi aplicada corretamente e testar em uma fonte de energia.
 
