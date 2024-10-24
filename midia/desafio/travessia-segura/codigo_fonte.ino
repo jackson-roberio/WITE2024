@@ -2,10 +2,11 @@
 * WITE 2024
 * Robótica Educacional
 * Desafio : Travessia Segura
+* Autor : Jackson Roberio
 */ 
-#define LedVermelho 21
-#define LedAmarelo 19
-#define LedVerde 5
+#define LedVermelho D7
+#define LedAmarelo D5
+#define LedVerde D3
 
 void setup() {
   pinMode(LedVermelho, OUTPUT);
