@@ -1,4 +1,4 @@
-# Desafio 08 (Novo) - Incêndio na cozinha
+# Desafio : Incêndio na cozinha
 
 ## Contexto :thought_balloon:
 
@@ -45,7 +45,7 @@ As instruções informadas aqui são os passos iniciais para resolução do prob
 Pegue qualquer protoboard para fazer este desafio. Faça a conexão da porta GND do Arduino na coluna neutro (-) da nossa protoboard, a protoboard identifica a coluna neutro com a cor azul e na parte superior tem o símbolo de menos (-).
 De modo semelhante, faça a conexão da porta 3.3V da porta do Arduino na coluna fase (+) da nossa protoboard, a coluna fase é identificável pela cor vermelha na protoboard e tem o símbolo de mais (+) na parte superior.
 
-<img src="../midia/desafio/08_novo/01.jpg" alt="Encaixe fase (+) e neutro (-)" height="250"> 
+<img src="../midia/desafio/incendio-na-cozinha/01.jpg" alt="Encaixe fase (+) e neutro (-)" height="250"> 
 
 **Passo 02** : Agora vamos trabalhar com o sensor de temperatura e umidade, para isso vou dar uma breve explicação sobre o sensor, para saber o sensor tem 4 pernas, porém apenas três são utilizadas, sendo elas da esquerda pra direita: 
 - 1ª perna: responsável pela carga energetica, é necessário passsa entre 3 a 5V para seu funcionamento, trabalharemos com a porta de 3V3 do Arduino;
@@ -59,7 +59,7 @@ De modo semelhante, faça a conexão da porta 3.3V da porta do Arduino na coluna
 Encaixado o sensor de temperatura, agora jampeie a conexão do seu pino do lado esquerdo na coluna fase (+) de nossa protoboard (em nosso exemplo usado o cabo azul),
 em seguida jumpeie a extremidade direita do nosso sensor na coluna neutro (-) de nossa protoboard (em nosso exemplo o cabo de cor preta).
 
-<img src="../midia/desafio/08_novo/02.jpg" alt="Conectando os polos enegerticos do sensor de temperatura na protoboard" height="250"> 
+<img src="../midia/desafio/incendio-na-cozinha/02.jpg" alt="Conectando os polos enegerticos do sensor de temperatura na protoboard" height="250"> 
 
 **Passo 04** : Seguirmos com a montarem da pinagem do sensor de tempeartura, agora conectaremos o jumper de dados, ele encontra-se ao lado da entrada de energia, é o segundo da esquerda para direita. 
 Para este cabo vamos fazer duas conexões, um jumper para a nossa porta 7 (digital) do nosso microcontrolador, e outra para a coluna fase (+) de nossa protoboard, mas para isso precisaremos colocar um resistor antes
@@ -67,21 +67,21 @@ de realizar o jumper para a coluna fase (+) de nossa protoboard. Então, para qu
 e a linha de dados do nosso sensor de presença (em nosso exemplo também conectado na porta 7 digital do Arduino). 
 Obs. como os resistores tem potências distinstas, achamos por bem deixar os resistores do Led livres e o resistor do sensor de temperatura estará colado com um adesivo no próprio sensor, pode desconectar o adesivo e usa-lo normalmente.
 
-<img src="../midia/desafio/08_novo/03.jpg" alt="Projeto final" height="250"> 
+<img src="../midia/desafio/incendio-na-cozinha/03.jpg" alt="Projeto final" height="250"> 
 
 **Passo 05** : Agora vamos conectar os cabos em nossa Speaker (mini alto-falante), para isso é importante frisar que na Speaker há 4 entrada, porém só apenas duas funcionam, dar pra identificar as entradas pelas cores dos cabos da própria Speaker,
 a cor preta é relativa a polaridade neutro (-) da Speaker e a cor vermelha é a polaridade fase (+). Busque dois jumpers de cores diferentes e conecter em cada uma das extremidades da Speaker.
 
-<img src="../midia/desafio/08_novo/04.jpg" alt="Projeto final" height="250"> 
+<img src="../midia/desafio/incendio-na-cozinha/04.jpg" alt="Projeto final" height="250"> 
 
 **Passo 06** : Por último vamos conectar a nossa Speaker na protoboard e no Arduino, para isso conecte o cabo referente ao fase (+) do Speaker na porta 4 (digital) do nosso Arduino, o outro cabo deve ser conectado na coluna neutro (-) de nossa protoboard.
 
-<img src="../midia/desafio/08_novo/05.jpg" alt="Projeto final" height="250"> 
+<img src="../midia/desafio/incendio-na-cozinha/05.jpg" alt="Projeto final" height="250"> 
 
 **Passo 07**: Pronto, trabalho concluído, se realizado todos os passos corretamente, solicite a avaliação de um dos monitores da oficina para rever se a solução foi aplicada corretamente e testar em uma fonte de energia.
 
 **Passo 08** : Confirmado que a solução esta funcionando, agora realize, com o material de apoio e descartáveis, uma solução estética mais agradável para o seu desafio. O grupo que entreguar o melhor projeto ganhará um brinde :gift:.
 
-[Clique aqui caso deseje conferir o código fonte pré-programado dessa solução.](../midia/desafio/08_novo/codigo_fonte.ino)
+[Clique aqui caso deseje conferir o código fonte pré-programado dessa solução.](../midia/desafio/incendio-na-cozinha/codigo_fonte.ino)
 
   
