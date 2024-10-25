@@ -1,7 +1,9 @@
 /**
 * WITE 2024
 * Robótica Educacional
-* Desafio : Muito Quente para Jogar
+* Desafio 			: Muito Quente para Jogar
+* Microcontrolador	:
+* Autor				: Jackson Roberio - https://jacksonroberio.com.br
 */ 
 
 #include "DHT.h"
