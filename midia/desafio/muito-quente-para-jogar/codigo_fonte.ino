@@ -2,22 +2,29 @@
 * WITE 2024
 * Robótica Educacional
 * Desafio 			: Muito Quente para Jogar
-* Microcontrolador	:
+* Microcontrolador	: ESP32
 * Autor				: Jackson Roberio - https://jacksonroberio.com.br
-*/ 
+**/ 
 
+//Importa a library do DHT11, captador de temperatura e umidade.
 #include "DHT.h"
 
+//Encaixe o pino de dados do DHT11 na porta 4 (D4 geralmente) do ESP32.
 #define DHTPIN 4
 
-#define DHTTYPE DHT11   // DHT 11
+//Encaixe o pino de led na porta 23 (D23 geralmente) do ESP32.
+#define led 23
 
+//Variável consumida pelo DHT11, se for trabalhar com o DHT22 é só mudar de DHT11 para DHT22 abaixo.
+#define DHTTYPE DHT11
+
+//Método que seta/relaciona a porta ao DHT11.
 DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
   Serial.begin(9600);
-  Serial.println(F("DHTxx test!"));
-
+  Serial.println(F("DHTxx iniciado captação de temperatura!"));
+  pinMode(led, OUTPUT);
   dht.begin();
 }
 
@@ -25,34 +32,38 @@ void loop() {
   // É necessário essa espera devido ao delay do sensor
   delay(3000);
 
-  // Reading temperature or humidity takes about 250 milliseconds!
-  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
   float h = dht.readHumidity();
-  // Read temperature as Celsius (the default)
   float t = dht.readTemperature();
-  // Read temperature as Fahrenheit (isFahrenheit = true)
   float f = dht.readTemperature(true);
 
-  // Check if any reads failed and exit early (to try again).
+  // Verifica se conseguiu realizar a medição da temperatura
   if (isnan(h) || isnan(t) || isnan(f)) {
     Serial.println(F("Failed to read from DHT sensor!"));
     return;
   }
 
-  // Compute heat index in Fahrenheit (the default)
+  // Calcular índice de calor em Fahrenheit
   float hif = dht.computeHeatIndex(f, h);
-  // Compute heat index in Celsius (isFahreheit = false)
+  // Calcule o índice de calor em Celsius (isFahreheit = false)
   float hic = dht.computeHeatIndex(t, h, false);
 
-  Serial.print(F("Humidity: "));
+  Serial.print(F("Umidade: "));
   Serial.print(h);
-  Serial.print(F("%  Temperature: "));
+  Serial.print(F("%  Temperatura: "));
   Serial.print(t);
   Serial.print(F("°C "));
   Serial.print(f);
-  Serial.print(F("°F  Heat index: "));
+  Serial.print(F("°F  Índice de calor: "));
   Serial.print(hic);
   Serial.print(F("°C "));
   Serial.print(hif);
   Serial.println(F("°F"));
+
+  //Verifica a temperatura em graus celcius e liga o mini-motor se necessário
+  if (t > 30.00) {
+    digitalWrite(led, HIGH);  // led ligado
+  } else {
+    digitalWrite(led, LOW);   // led desligado
+  }
+
 }
