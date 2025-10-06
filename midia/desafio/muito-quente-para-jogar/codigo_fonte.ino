@@ -1,69 +1,51 @@
 /**
 * WITE 2024
 * Robótica Educacional
-* Desafio 			: Muito Quente para Jogar
-* Microcontrolador	: ESP32
-* Autor				: Jackson Roberio - https://jacksonroberio.com.br
+* Desafio 			    : Muito Quente para Jogar
+* Microcontrolador	: Arduino
+* Autor				      : Jarles Santos
 **/ 
 
-//Importa a library do DHT11, captador de temperatura e umidade.
-#include "DHT.h"
+#include "DHT.h" // Inclui a biblioteca do sensor DHT (necessária para usar DHT11/DHT22)
 
-//Encaixe o pino de dados do DHT11 na porta 4 (D4 geralmente) do ESP32.
-#define DHTPIN 4
+#define DHTPIN 7     // Define o pino digital ao qual o sensor está conectado
+#define DHTTYPE DHT11 // Define o tipo de sensor utilizado (pode ser DHT11 ou DHT22)
+#define led 5 // Define o pino digital ao qual o LED está conectado
 
-//Encaixe o pino de led na porta 23 (D23 geralmente) do ESP32.
-#define led 23
-
-//Variável consumida pelo DHT11, se for trabalhar com o DHT22 é só mudar de DHT11 para DHT22 abaixo.
-#define DHTTYPE DHT11
-
-//Método que seta/relaciona a porta ao DHT11.
-DHT dht(DHTPIN, DHTTYPE);
+DHT dht(DHTPIN, DHTTYPE); // Cria um objeto "dht" para se comunicar com o sensor, passando o pino e o tipo do sensor
 
 void setup() {
-  Serial.begin(9600);
-  Serial.println(F("DHTxx iniciado captação de temperatura!"));
-  pinMode(led, OUTPUT);
-  dht.begin();
+  Serial.begin(9600); // Inicializa a comunicação serial a 9600 bps para enviar dados ao monitor serial
+  dht.begin(); // Inicializa o sensor DHT
+  pinMode(led, OUTPUT); // Configura o pino do LED como saída (permite ligar/desligar o LED)
 }
 
 void loop() {
-  // É necessário essa espera devido ao delay do sensor
-  delay(3000);
+  // Faz a leitura da umidade relativa do ar
+  float humidity = dht.readHumidity();
+  // Faz a leitura da temperatura em graus Celsius
+  float temperature = dht.readTemperature();
 
-  float h = dht.readHumidity();
-  float t = dht.readTemperature();
-  float f = dht.readTemperature(true);
-
-  // Verifica se conseguiu realizar a medição da temperatura
-  if (isnan(h) || isnan(t) || isnan(f)) {
-    Serial.println(F("Failed to read from DHT sensor!"));
+  // Verifica se as leituras são válidas
+  if (isnan(humidity) || isnan(temperature)) {
+    Serial.println("Falha ao ler do sensor DHT!");
     return;
   }
 
-  // Calcular índice de calor em Fahrenheit
-  float hif = dht.computeHeatIndex(f, h);
-  // Calcule o índice de calor em Celsius (isFahreheit = false)
-  float hic = dht.computeHeatIndex(t, h, false);
+  // Imprime os valores lidos no monitor serial
+  Serial.print("Umidade: ");
+  Serial.print(humidity);
+  Serial.print(" %\t");
+  Serial.print("Temperatura: ");
+  Serial.print(temperature);
+  Serial.println(" °C");
 
-  Serial.print(F("Umidade: "));
-  Serial.print(h);
-  Serial.print(F("%  Temperatura: "));
-  Serial.print(t);
-  Serial.print(F("°C "));
-  Serial.print(f);
-  Serial.print(F("°F  Índice de calor: "));
-  Serial.print(hic);
-  Serial.print(F("°C "));
-  Serial.print(hif);
-  Serial.println(F("°F"));
+  // Controle do LED: acende se a temperatura for maior que 30 °C, senão apaga
+  if (temperature > 30.0) {
+      digitalWrite(led, HIGH); // Liga o LED
+    } else {
+    digitalWrite(led, LOW);  // Desliga o LED
+   }
 
-  //Verifica a temperatura em graus celcius e liga o mini-motor se necessário
-  if (t > 30.00) {
-    digitalWrite(led, HIGH);  // led ligado
-  } else {
-    digitalWrite(led, LOW);   // led desligado
-  }
-
+  delay(2000); // Aguarda 2 segundos antes de fazer uma nova leitura
 }
