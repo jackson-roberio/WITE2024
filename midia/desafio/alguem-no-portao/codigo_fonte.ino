@@ -1,40 +1,43 @@
 /**
 * WITE 2024
 * Robótica Educacional
-* Desafio : Alguém no portão
+* Desafio : Alguém no Portão
+* Microcontrolador : Arduino
+* Autor : Jarles Santos
 */ 
-#define AutoFalante 26
-#define Presenca 13
-#define Led 14
 
-int Visitantes = 0; 
+// Definição de pinos
+#define botao 5     // Pino onde o botão está conectado
+#define buzzer 7   // Pino onde o buzzer está conectado
+
+bool estadoBotao = false;    // Inicia a variável para armazenar o estado do botão, se pressionado ou não
 
 void setup() {
-  pinMode(AutoFalante, OUTPUT);
-  pinMode(Led, OUTPUT);
-  pinMode(Presenca, INPUT);
-  Serial.begin(9600);
+  // Configura os pinos
+  pinMode(botao, INPUT_PULLUP);  // Configura o pino do botão com resistência pull-up
+  pinMode(buzzer, OUTPUT);      // Configura o pino do buzzer como saída 
+
 }
 
 void loop() {
-  bool valorSensor = digitalRead(Presenca);
-  
-  if (valorSensor){
-    Serial.println("DETECTADO");
+  // Lê o estado do botão
+  estadoBotao = digitalRead(botao);
 
-    Visitantes = Visitantes + 1;
-
-    Serial.println(Visitantes);
-
-    //A contagem de visitantes é registrada por piscagem nos led's
-    for (int i = 0; i <= Visitantes; i++){
-      digitalWrite(Led, HIGH);
-      tone(AutoFalante, 300);
-      delay(500);
-      digitalWrite(Led, LOW);
-      noTone(AutoFalante);
-      delay(500);
+  // Se o botão for pressionado (LOW porque está com PULLUP)
+  if (estadoBotao == false) {
+           
+      // Emite som no buzzer
+      tone(buzzer, 800, 300); // 800Hz por 300ms
+      delay(350);
+      tone(buzzer, 400, 600);  // 400Hz por 600ms
+      delay(650);
+           
     }
-    
-  } 
-}
+
+    else{
+        
+      // Interrompe o som no buzzer
+      noTone(buzzer);
+     
+    }
+  }
