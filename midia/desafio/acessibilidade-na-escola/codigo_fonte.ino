@@ -2,49 +2,40 @@
 * WITE 2024
 * Robótica Educacional
 * Desafio : Acessibilidade na Escola
+* Microcontrolador : Arduino
+* Autor : Jarles Santos
+* Autor : Jackson Roberio
 */ 
 
 // Definição de pinos
-const int botaoPin = 21;     // Pino onde o botão está conectado
-const int ledPin = 17;       // Pino onde o LED está conectado
-const int speakerPin = 15;   // Pino onde o speaker está conectado
+#define botao 7     // Pino onde o botão está conectado
+#define led 5       // Pino onde o LED está conectado
+#define buzzer 11   // Pino onde o speaker está conectado
 
-bool estadoBotao = false;    // Variável para armazenar o estado do botão
+bool estadoBotao = false;    // Inicia a variável para armazenar o estado do botão, se pressionado ou não
 
 void setup() {
   // Configura os pinos
-  pinMode(botaoPin, INPUT_PULLUP);  // Configura o pino do botão com resistência pull-up
-  pinMode(ledPin, OUTPUT);          // Configura o pino do LED como saída
-  pinMode(speakerPin, OUTPUT);      // Configura o pino do speaker como saída
+  pinMode(botao, INPUT_PULLUP);  // Configura o pino do botão com resistência pull-up
+  pinMode(led, OUTPUT);          // Configura o pino do LED como saída
+  pinMode(buzzer, OUTPUT);      // Configura o pino do speaker como saída 
 
-  // Inicializa os pinos como desligados
-  digitalWrite(ledPin, LOW);
-  digitalWrite(speakerPin, LOW);
 }
 
 void loop() {
   // Lê o estado do botão
-  estadoBotao = digitalRead(botaoPin);
+  estadoBotao = digitalRead(botao);
 
   // Se o botão for pressionado (LOW porque está com PULLUP)
-  if (estadoBotao == LOW) {
-    for(int i = 0; i <= 6; i++){
-    
+  if (estadoBotao == false) {
       // Acende o LED
-      digitalWrite(ledPin, HIGH);
-    
-      // Emite som no speaker
-      tone(speakerPin, 1000);  // Frequência de 1000 Hz
-    
-      // Aguarda 500ms
-      delay(500);
-    
+      digitalWrite(led, HIGH);
+      // Emite som no buzzer
+      tone(buzzer, 1000);  // Frequência de 1000 Hz      
+    } else { 
       // Desliga o LED e o som
-      digitalWrite(ledPin, LOW);
-      noTone(speakerPin);
-    
-      // Aguarda mais 500ms
-      delay(500);
+      digitalWrite(led, LOW);
+      // Interrompe o som no buzzer
+      noTone(buzzer);
     }
   }
-}
