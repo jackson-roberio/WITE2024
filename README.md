@@ -14,9 +14,9 @@ A dinâmica da oficina foi baseada em desafios que foram distribuídos a todos o
 ## Desafios
 
 Cada equipe ficará alocada com um dos desafios que será distribuído individualmente para cada grupo de participantes, cada equipe teve uma média de 7 pessoas por grupo. Abaixo é exposto cada desafio individualmente:
-
-  - [Acessibilidade na Escola](desafio/ACESSIBILIDADE-NA-ESCOLA.md)
-  - - Código
+[TEXTO QUE VAI FICAR CLICÁVEL](https://url-aqui.com)
+  - Acessibilidade na Escola
+  - - [Código] (desafio/ACESSIBILIDADE-NA-ESCOLA.md)
   - Instrução
   - [Alguém no Portão](desafio/ALGUEM-NO-PORTAO.md)
     * Código
