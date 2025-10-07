@@ -16,16 +16,35 @@ A dinâmica da oficina foi baseada em desafios que foram distribuídos a todos o
 Cada equipe ficará alocada com um dos desafios que será distribuído individualmente para cada grupo de participantes, cada equipe teve uma média de 7 pessoas por grupo. Abaixo é exposto cada desafio individualmente:
 
   - [Acessibilidade na Escola](desafio/ACESSIBILIDADE-NA-ESCOLA.md)
+  - - Código
+  - Instrução
   - [Alguém no Portão](desafio/ALGUEM-NO-PORTAO.md)
+    * Código
+    * Instrução
   - [Alimentos da Despensa](desafio/ALIMENTOS-DA-DESPENSA.md)
+    * Código
+    * Instrução
   - Estacionamento Privado
+    * Código
+    * Instrução
   - [Horta da Escola](desafio/HORTA-DA-ESCOLA.md)
+    * Código
+    * Instrução
   - [Incêndio na Cozinha](desafio/INCENDIO-NA-COZINHA.md)
+     * Código
+     * Instrução
   - [Muito quente para jogar](desafio/MUITO-QUENTE-PARA-JOGAR.md)
+    * Código
+    * Instrução
   - Pega Ladrão
+      * Código
+      * Instrução
   - [Roedores Ladrões](desafio/ROEDORES-LADROES.md)
+      * Código
+      * Instrução
   - [Travessia Segura](desafio/TRAVESSIA-SEGURA.md)
-
+      * Código
+      * Instrução
 
 ## Organizadores
 
