@@ -16,45 +16,46 @@ A dinâmica da oficina foi baseada em desafios que foram distribuídos a todos o
 Cada equipe ficará alocada com um dos desafios que será distribuído individualmente para cada grupo de participantes, cada equipe teve uma média de 7 pessoas por grupo.  
 Abaixo é exposto cada desafio individualmente:  
 
+
 - **Acessibilidade na Escola**  
-  - [Código](desafio/ACESSIBILIDADE-NA-ESCOLA.md)  
-  - Instrução  
+  - Código  
+  - [Instrução](desafio/ACESSIBILIDADE-NA-ESCOLA.md)
 
 - **Alguém no Portão**  
-  - [Código](desafio/ALGUEM-NO-PORTAO.md)  
-  - Instrução  
+  - Código  
+  - [Instrução](desafio/ALGUEM-NO-PORTAO.md)
 
 - **Alimentos da Despensa**  
-  - [Código](desafio/ALIMENTOS-DA-DESPENSA.md)  
-  - Instrução  
+  - Código  
+  - [Instrução](desafio/ALIMENTOS-DA-DESPENSA.md)
 
 - **Estacionamento Privado**  
-  - [Código](desafio/ESTACIONAMENTO-PRIVADO.md)  
-  - Instrução  
+  - Código  
+  - [Instrução](desafio/ESTACIONAMENTO-PRIVADO.md)
 
 - **Horta da Escola**  
-  - [Código](desafio/HORTA-DA-ESCOLA.md)  
-  - Instrução  
+  - Código  
+  - [Instrução](desafio/HORTA-DA-ESCOLA.md)
 
 - **Incêndio na Cozinha**  
-  - [Código](desafio/INCENDIO-NA-COZINHA.md)  
-  - Instrução  
+  - Código  
+  - [Instrução](desafio/INCENDIO-NA-COZINHA.md)
 
 - **Muito Quente para Jogar**  
-  - [Código](desafio/MUITO-QUENTE-PARA-JOGAR.md)  
-  - Instrução  
+  - Código  
+  - [Instrução](desafio/MUITO-QUENTE-PARA-JOGAR.md)
 
 - **Pega Ladrão**  
-  - [Código](desafio/PEGA-LADRAO.md)  
-  - Instrução  
+  - Código  
+  - [Instrução](desafio/PEGA-LADRAO.md)
 
 - **Roedores Ladrões**  
-  - [Código](desafio/ROEDORES-LADROES.md)  
-  - Instrução  
+  - Código  
+  - [Instrução](desafio/ROEDORES-LADROES.md)
 
 - **Travessia Segura**  
-  - [Código](desafio/TRAVESSIA-SEGURA.md)  
-  - Instrução  
+  - Código  
+  - [Instrução](desafio/TRAVESSIA-SEGURA.md)
 
 ## Organizadores
 
