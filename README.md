@@ -13,38 +13,48 @@ A dinâmica da oficina foi baseada em desafios que foram distribuídos a todos o
 
 ## Desafios
 
-Cada equipe ficará alocada com um dos desafios que será distribuído individualmente para cada grupo de participantes, cada equipe teve uma média de 7 pessoas por grupo. Abaixo é exposto cada desafio individualmente:
-[TEXTO QUE VAI FICAR CLICÁVEL](https://url-aqui.com)
-  - Acessibilidade na Escola
-  - - [Código] (desafio/ACESSIBILIDADE-NA-ESCOLA.md)
-  - Instrução
-  - [Alguém no Portão](desafio/ALGUEM-NO-PORTAO.md)
-    * Código
-    * Instrução
-  - [Alimentos da Despensa](desafio/ALIMENTOS-DA-DESPENSA.md)
-    * Código
-    * Instrução
-  - Estacionamento Privado
-    * Código
-    * Instrução
-  - [Horta da Escola](desafio/HORTA-DA-ESCOLA.md)
-    * Código
-    * Instrução
-  - [Incêndio na Cozinha](desafio/INCENDIO-NA-COZINHA.md)
-     * Código
-     * Instrução
-  - [Muito quente para jogar](desafio/MUITO-QUENTE-PARA-JOGAR.md)
-    * Código
-    * Instrução
-  - Pega Ladrão
-      * Código
-      * Instrução
-  - [Roedores Ladrões](desafio/ROEDORES-LADROES.md)
-      * Código
-      * Instrução
-  - [Travessia Segura](desafio/TRAVESSIA-SEGURA.md)
-      * Código
-      * Instrução
+Cada equipe ficará alocada com um dos desafios que será distribuído individualmente para cada grupo de participantes, cada equipe teve uma média de 7 pessoas por grupo.  
+Abaixo é exposto cada desafio individualmente:  
+
+- **Acessibilidade na Escola**  
+  - [Código](desafio/ACESSIBILIDADE-NA-ESCOLA.md)  
+  - Instrução  
+
+- **Alguém no Portão**  
+  - [Código](desafio/ALGUEM-NO-PORTAO.md)  
+  - Instrução  
+
+- **Alimentos da Despensa**  
+  - [Código](desafio/ALIMENTOS-DA-DESPENSA.md)  
+  - Instrução  
+
+- **Estacionamento Privado**  
+  - [Código](desafio/ESTACIONAMENTO-PRIVADO.md)  
+  - Instrução  
+
+- **Horta da Escola**  
+  - [Código](desafio/HORTA-DA-ESCOLA.md)  
+  - Instrução  
+
+- **Incêndio na Cozinha**  
+  - [Código](desafio/INCENDIO-NA-COZINHA.md)  
+  - Instrução  
+
+- **Muito Quente para Jogar**  
+  - [Código](desafio/MUITO-QUENTE-PARA-JOGAR.md)  
+  - Instrução  
+
+- **Pega Ladrão**  
+  - [Código](desafio/PEGA-LADRAO.md)  
+  - Instrução  
+
+- **Roedores Ladrões**  
+  - [Código](desafio/ROEDORES-LADROES.md)  
+  - Instrução  
+
+- **Travessia Segura**  
+  - [Código](desafio/TRAVESSIA-SEGURA.md)  
+  - Instrução  
 
 ## Organizadores
 
