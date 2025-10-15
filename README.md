@@ -13,19 +13,49 @@ A dinâmica da oficina foi baseada em desafios que foram distribuídos a todos o
 
 ## Desafios
 
-Cada equipe ficará alocada com um dos desafios que será distribuído individualmente para cada grupo de participantes, cada equipe teve uma média de 7 pessoas por grupo. Abaixo é exposto cada desafio individualmente:
+Cada equipe ficará alocada com um dos desafios que será distribuído individualmente para cada grupo de participantes, cada equipe teve uma média de 7 pessoas por grupo.  
+Abaixo é exposto cada desafio individualmente:  
 
-  - [Acessibilidade na Escola](desafio/ACESSIBILIDADE-NA-ESCOLA.md)
-  - [Alguém no Portão](desafio/ALGUEM-NO-PORTAO.md)
-  - [Alimentos da Despensa](desafio/ALIMENTOS-DA-DESPENSA.md)
-  - Estacionamento Privado
-  - [Horta da Escola](desafio/HORTA-DA-ESCOLA.md)
-  - [Incêndio na Cozinha](desafio/INCENDIO-NA-COZINHA.md)
-  - [Muito quente para jogar](desafio/MUITO-QUENTE-PARA-JOGAR.md)
-  - Pega Ladrão
-  - [Roedores Ladrões](desafio/ROEDORES-LADROES.md)
-  - [Travessia Segura](desafio/TRAVESSIA-SEGURA.md)
 
+- **Acessibilidade na Escola**  
+  - Código  
+  - [Instrução](desafio/ACESSIBILIDADE-NA-ESCOLA.md)
+
+- **Alguém no Portão**  
+  - Código  
+  - [Instrução](desafio/ALGUEM-NO-PORTAO.md)
+
+- **Alimentos da Despensa**  
+  - Código  
+  - [Instrução](desafio/ALIMENTOS-DA-DESPENSA.md)
+
+- **Estacionamento Privado**  
+  - Código  
+  - [Instrução](desafio/ESTACIONAMENTO-PRIVADO.md)
+
+- **Horta da Escola**  
+  - Código  
+  - [Instrução](desafio/HORTA-DA-ESCOLA.md)
+
+- **Incêndio na Cozinha**  
+  - Código  
+  - [Instrução](desafio/INCENDIO-NA-COZINHA.md)
+
+- **Muito Quente para Jogar**  
+  - Código  
+  - [Instrução](desafio/MUITO-QUENTE-PARA-JOGAR.md)
+
+- **Pega Ladrão**  
+  - Código  
+  - [Instrução](desafio/PEGA-LADRAO.md)
+
+- **Roedores Ladrões**  
+  - Código  
+  - [Instrução](desafio/ROEDORES-LADROES.md)
+
+- **Travessia Segura**  
+  - Código  
+  - [Instrução](desafio/TRAVESSIA-SEGURA.md)
 
 ## Organizadores
 
