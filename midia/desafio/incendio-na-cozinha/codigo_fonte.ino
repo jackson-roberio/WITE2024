@@ -1,74 +1,38 @@
 /**
 * WITE 2024
 * Robótica Educacional
-* Desafio : Incêndio na cozinha
-* Microcontrolador : Arduino Uno
-* Autor : Jackson Roberio - https://jacksonroberio.com.br
-* Co-Autor : Thiago Valneir
-*/ 
+* Desafio 			: Incêndio na Cozinha
+* Microcontrolador	: Arduino
+* Autor				: Jarles Santos
+**/ 
 
-//Importa a library do DHT11, captador de temperatura e umidade.
-#include "DHT.h"
 
-//Saída de som através do Speaker, encaixa na porta 4 do Arduino.
-#define autoFalante 4
+#define sensorFumaca A0     // Define o pino digital ao qual o sensor está conectado
+#define buzzer 5 // Define o pino digital ao qual o buzzer está conectado
 
-//Encaixe o pino de dados do DHT11 na porta 7 do Arduino.
-#define DHTPIN 7
-
-//Variável consumida pelo DHT11, se for trabalhar com o DHT22 é só mudar de DHT11 para DHT22 abaixo.
-#define DHTTYPE DHT11 
-
-//Método que seta/relaciona a porta ao DHT11.
-DHT dht(DHTPIN, DHTTYPE);
+int valorLeituraSensor;
 
 void setup() {
-  Serial.begin(9600);
-  Serial.println(F("DHTxx iniciado captação de temperatura!"));
-  pinMode(autoFalante, OUTPUT);
-  dht.begin();
-}
+  Serial.begin(9600); // Inicializa a comunicação serial a 9600 bps para enviar dados ao monitor serial
+  pinMode(sensorFumaca, INPUT); // Declara o pino do sensor como pino de entrada
+  pinMode(buzzer, OUTPUT); // Configura o pino do buzzer como saída (permite ligar/desligar o buzzer)
+}  
 
 void loop() {
-  delay(3000);
-
-  float h = dht.readHumidity();
-  float t = dht.readTemperature();
-  float f = dht.readTemperature(true);
-
-  //Verifica se conseguiu coletar a tempratura ambiente
-  if (isnan(h) || isnan(t) || isnan(f)) {
-    Serial.println(F("Failed to read from DHT sensor!"));
-    return;
+ 
+  valorLeituraSensor = analogRead(sensorFumaca); //Leitura de dados do sensor
+  Serial.print("Valor detectado pelo sensor: "); //Imprime a mensagem no monitor serial
+  Serial.println(valorLeituraSensor); //Imprime valores de leitura encontrados no monitor serial
+  if (valorLeituraSensor >= 200) //Verifica se o valor de leitura do sensor é maior ou igual a 200
+  {
+    Serial.println("Fumaça detectada!"); //Imprime a mensagem no monitor serial
+    digitalWrite(buzzer, HIGH); //Liga o buzzer
   }
+  else {
+    Serial.println("Fumaça não detectada!"); //Imprime a mensagem no monitor serial
+    digitalWrite(buzzer, LOW); //Desliga o buzzer
+  }
+  delay(1000); //Repete a leitura a cada 1 segundo
 
-  // Calcular índice de calor em Fahrenheit
-  float hif = dht.computeHeatIndex(f, h);
-  // Calcule o índice de calor em Celsius (isFahreheit = false)
-  float hic = dht.computeHeatIndex(t, h, false);
-
-  Serial.print(F("Humidade: "));
-  Serial.print(h);
-  Serial.print(F("%  Temperatura: "));
-  Serial.print(t);
-  Serial.print(F("°C "));
-  Serial.print(f);
-  Serial.print(F("°F  Índice de calor: "));
-  Serial.print(hic);
-  Serial.print(F("°C "));
-  Serial.print(hif);
-  Serial.println(F("°F"));
-
-  //Verifica a temperatura em graus celcius e emite um alerta sonoro a depender da temperatura
-  if (t > 30.00) {
-    tone(autoFalante, 300);
-    delay(500);
-    noTone(autoFalante);
-    delay(500);
-    tone(autoFalante, 300);
-    delay(500);
-    noTone(autoFalante);
-    delay(500);
-  } 
 
 }
